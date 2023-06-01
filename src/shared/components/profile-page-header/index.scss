@@ -1,0 +1,93 @@
+@import '../const.scss';
+
+.profile-page-header {
+  display: flex;
+  column-gap: 30px;
+  width: 100%;
+  align-items: center;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}
+
+.profile-page-header-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-page-header-label {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 160px;
+  height: 160px;
+
+  overflow: hidden;
+  background: $colorMainWhite;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18),
+    0px 1px 5px rgba(191, 196, 201, 0.24);
+  border-radius: 50%;
+
+  @media screen and (max-width: 320px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.profile-page-header-label img{
+  object-fit: cover;
+}
+
+.camera-icon-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 42px;
+  background-color: rgba(54, 54, 54, 0.7);
+
+  @media screen and (max-width: 320px) {
+    height: 39px;
+  }
+}
+
+.profile-page-header-name-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 400px) {
+    align-items: center;
+  }
+}
+
+.profile-page-header-name-text {
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 64px;
+  letter-spacing: 0.2px;
+  color: $colorMainDark;
+
+
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  @media screen and (max-width: 400px) {
+    text-align: center;
+   }
+
+}

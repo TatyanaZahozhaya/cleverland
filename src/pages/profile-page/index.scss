@@ -1,0 +1,14 @@
+.account-page-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 92px;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    row-gap: 64px;
+  }
+
+  @media screen and (max-width: 400px) {
+    row-gap: 42px;
+  }
+}

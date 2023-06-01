@@ -1,0 +1,10 @@
+@import '../const.scss';
+
+.vote-button {
+  width: 350px;
+  height: 52px;
+
+  @media screen and (max-width: 385px) {
+    width: 288px;
+  }
+}

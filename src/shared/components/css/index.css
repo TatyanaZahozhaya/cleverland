@@ -1,0 +1,326 @@
+.vote-button {
+  width: 350px;
+  height: 52px;
+}
+@media screen and (max-width: 385px) {
+  .vote-button {
+    width: 288px;
+  }
+}s: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2);
+  box-shadow: 0px 3px 4px rgba(191, 196, 201, 0.18);
+  box-shadow: 0px 1px 5px rgba(191, 196, 201, 0.24);
+}
+@media screen and (max-width: 600px) {
+  .view-button_container {
+    display: grid;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+}
+
+.view-button_radio {
+  display: none;
+}
+
+.view-button_text {
+  display: none;
+}
+
+.view-button_icon {
+  fill: rgb(167, 167, 167);
+}
+
+.view-button_radio:checked + label {
+  background-image: -webkit- linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+  background-image: -moz- linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+  background-image: -o- linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+  background-image: linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+}
+
+.view-button_radio:hover + label {
+  box-shadow: 0px 2px 5px rgba(54, 54, 54, 0.1);
+}
+
+.view-button_radio:active + label {
+  box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2);
+  box-shadow: 0px 1px 10px rgba(249, 89, 8, 0.2);
+}
+
+.view-button_radio:checked + label svg {
+  fill: white;
+}essage-button {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.close-toast-message-icon {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .close-toast-message-icon {
+    width: 16px;
+    height: 16px;
+  }
+} 8px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.book-page-section-header-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(54, 54, 54);
+}
+@media screen and (max-width: 768px) {
+  .book-page-section-header-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .book-page-section-header-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.book-description-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(54, 54, 54);
+  margin: 20px 0;
+}
+@media screen and (max-width: 520px) {
+  .book-description-text {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
+
+.rating-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: rgb(54, 54, 54);
+}
+
+.detailes-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .detailes-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .detailes-text {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.detailes-parameter-text {
+  font-weight: 600;
+  color: rgb(167, 167, 167);
+}
+
+.detailes-value-text {
+  font-weight: 400;
+  color: rgb(54, 54, 54);
+}
+
+.general-amount-counter-text {
+  color: rgb(167, 167, 167);
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.toast-message-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(54, 54, 54);
+}
+@media screen and (max-width: 768px) {
+  .toast-message-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+.modal-name-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgb(54, 54, 54);
+}
+
+@media screen and (max-width: 320px) {
+  .modal-message-name-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.modal-step-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(54, 54, 54);
+  margin-top: 8px;
+}
+
+.modal-secondary-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(114, 114, 114);
+}
+@media screen and (max-width: 320px) {
+  .modal-secondary-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.modal-secondary-text__dark {
+  color: rgb(54, 54, 54);
+  text-align: center;
+}
+
+.modal-main-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: rgb(54, 54, 54);
+}
+
+.modal-main-text__grey {
+  color: rgb(114, 114, 114);
+}
+
+.modal-message-body-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (max-width: 320px) {
+  .modal-message-body-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}: linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+.profile-page-booking-button-cancel:active {
+  box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+}
+.profile-page-booking-button-cancel:disabled {
+  background: rgb(235, 235, 235);
+}
+@media screen and (max-width: 500px) {
+  .profile-page-booking-button-cancel {
+    width: 186px;
+  }
+}
+
+.elipse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.elipse-button:active {
+  box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+}
+
+.elipse-button-change {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(191, 196, 201);
+  color: rgb(54, 54, 54);
+}
+
+.elipse-button-vote {
+  background: linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+  border: none;
+  color: rgb(255, 255, 255);
+}
+
+.profile-page-for-rating-button {
+  align-self: end;
+  justify-self: end;
+  height: 40px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.book-page-for-rating-button {
+  height: 52px;
+  border-radius: 30px;
+  letter-spacing: 0.2px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile-page-delivery-date {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  align-self: end;
+  justify-self: end;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: rgb(255, 82, 83);
+}
+@media screen and (max-width: 400px) {
+  .profile-page-delivery-date {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.profile-page-history-slider-container {
+  max-width: 100%;
+}
+
+.slider-for-history-container {
+  max-width: 100%;
+}
+
+.mySwaper-history {
+  height: 518px;
+  padding: 0 5px;
+}
+
+.book-card-container-history {
+  height: 470px;
+  width: 100%;
+}

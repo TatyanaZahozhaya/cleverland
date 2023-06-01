@@ -1,0 +1,16 @@
+@import '../const.scss';
+
+.ordered-list-item {
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorMainDark;
+  &:before {
+    counter-increment: li;
+    content: counters(li, '.') '. ';
+  }
+}
+
+.first-level {
+  font-weight: $fontWeightSemiBold;
+}

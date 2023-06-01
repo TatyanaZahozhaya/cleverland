@@ -1,0 +1,30 @@
+@import '../const.scss';
+
+.hide-button {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  margin: 3px 0;
+  grid-area: hideButton;
+}
+
+.hide-button__opened {
+  transform: rotate(180deg);
+}
+
+.comments-reviews_box {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  grid-area: commentsBox;
+
+  @media screen and (max-width: 520px) {
+    gap: 32px;
+  }
+}
+.comments_box__closed {
+  display: none;
+}
+.comments_box{display: block;}

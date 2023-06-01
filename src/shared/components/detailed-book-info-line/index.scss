@@ -1,0 +1,23 @@
+@import '../const.scss';
+
+.detailed-book-info-line {
+  display: grid;
+  grid-template-columns: 160px auto;
+  gap: 30px;
+  align-items: baseline;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 320px) {
+    grid-template-columns: 95px 160px;
+  }
+}
+
+.detailed-book-info-box {
+  margin-top: 16px;
+  column-count: 2;
+  column-gap: 4%;
+
+  @media screen and (max-width: 640px) {
+    column-count: 1;
+  }
+}

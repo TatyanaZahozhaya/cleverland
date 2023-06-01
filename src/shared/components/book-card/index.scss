@@ -1,0 +1,45 @@
+@import '../const.scss';
+
+.book-card-container {
+  background: $colorMainWhite;
+  box-shadow: 0px 2px 4px $colorShadow020, 0px 3px 4px $colorShadow018, 0px 1px 5px $colorShadow024;
+  border-radius: 10px;
+}
+
+.book-card-container-window {
+  display: grid;
+  grid-template-areas: 'bookCover' 'rating' 'bookName' 'author' 'status';
+  grid-template-rows: auto 56px 1fr 1fr 40px;
+
+  width: 190px;
+  height: 470px;
+  padding: 8px 8px 16px 8px;
+  justify-items: center;
+
+  @media screen and (max-width: 440px) {
+    width: 280px;
+  }
+}
+
+.book-card-container-list {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'bookCover bookName bookName' 'bookCover author author' 'bookCover rating status';
+  column-gap: 16px;
+  row-gap: 8px;
+  padding: 24px 16px;
+  @media screen and (max-width: 768px) {
+    padding: 16px;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 120px 1fr;
+    grid-template-areas: 'bookCover bookName ' 'bookCover author ' 'bookCover rating ' 'bookCover  status';
+  }
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 70px 1fr;
+    grid-template-areas: 'bookCover bookName ' 'bookCover author ' 'bookCover rating ' 'bookCover  status';
+    column-gap: 8px;
+    padding: 16px 8px;
+  }
+}

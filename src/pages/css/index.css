@@ -1,0 +1,27 @@
+.central-part {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-top: 62px;
+  animation: brightUp 2s;
+}
+@media screen and (max-width: 768px) {
+  .central-part {
+    margin-top: 54px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .central-part {
+    margin-top: 32px;
+  }
+}
+
+.central-part_container {
+  display: flex;
+  gap: 6px;
+}
+@media screen and (max-width: 1000px) {
+  .central-part_container {
+    gap: 0px;
+  }
+}

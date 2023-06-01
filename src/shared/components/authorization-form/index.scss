@@ -1,0 +1,26 @@
+@import '../const.scss';
+
+.auth-form {
+  width: 100%;
+}
+
+.link-to-reset-password-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 12px;
+  font-weight: 500;
+}
+
+.link-to-reset-password_text {
+  font-size: $fontSizeS;
+  line-height: $lineHeightXS;
+  letter-spacing: 0.2px;
+  color: $colorMainDark;
+}
+.link-to-reset-password_text__grey {
+  color: $colorGreyBlack40;
+}
+
+.link-to-reset-password_text__warning {
+  color: $colorOtherNegative;
+}

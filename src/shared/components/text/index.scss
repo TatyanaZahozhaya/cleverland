@@ -1,0 +1,229 @@
+@import '../const.scss';
+
+.footer-text {
+  color: $colorMainDark;
+  font-weight: $fontWeightRegular;
+  line-height: $lineHeight;
+  text-align: center;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.name-text {
+  font-size: $fontSizeL;
+  font-weight: $fontWeightBold;
+  line-height: $lineHeightName;
+  @media screen and (max-width: 500px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.log-in-section_text {
+  font-size: $fontSizeM;
+  font-weight: $fontWeightSemiBold;
+  line-height: $lineHeightS;
+}
+
+.book-card_author-text {
+  font-weight: $fontWeightRegular;
+  line-height: $lineHeightS;
+  color: $colorGreyBlack70;
+}
+.no-rating-text {
+  font-weight: $fontWeightRegular;
+  line-height: $lineHeightS;
+  color: $colorGreyBlack40;
+}
+
+.page-name-text {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeL;
+  line-height: $lineHeightName;
+  color: $colorMainDark;
+}
+
+.path-text {
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeM;
+  line-height: $lineHeightS;
+  color: $colorGreyBlack40;
+}
+
+.book-page-name-text {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeL;
+  line-height: $lineHeightName;
+  color: $colorMainDark;
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeXXM;
+    line-height: $lineHeightXL;
+  }
+  @media screen and (max-width: 520px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+    margin-top: 16px;
+  }
+}
+
+.book-page-author-text {
+  margin-top: 24px;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXM;
+  line-height: $lineHeightL;
+  color: $colorGreyBlack40;
+  @media screen and (max-width: 768px) {
+    margin-top: 32px;
+    font-size: $fontSizeM;
+    line-height: $lineHeightXL;
+  }
+  @media screen and (max-width: 520px) {
+    margin-top: 8px;
+    font-size: $fontSizeS;
+    line-height: $lineHeightS;
+  }
+}
+
+.book-page-section-header-text {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXM;
+  line-height: $lineHeightL;
+  color: $colorMainDark;
+
+  @media screen and (max-width: 768px) {
+    font-weight: $fontWeightSemiBold;
+    font-size: $fontSizeXM1;
+    line-height: $lineHeight;
+  }
+  @media screen and (max-width: 520px) {
+    font-weight: $fontWeightBold;
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.book-description-text {
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorMainDark;
+  margin: 20px 0;
+  @media screen and (max-width: 520px) {
+    font-size: $fontSizeS;
+    line-height: $lineHeightS;
+    margin: 0;
+  }
+}
+
+.rating-text {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXM;
+  line-height: $lineHeightL;
+  color: $colorMainDark;
+}
+
+.detailes-text {
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeM;
+    line-height: $lineHeightS;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: $fontSizeS;
+    line-height: $lineHeightXS;
+  }
+}
+
+.detailes-parameter-text {
+  font-weight: $fontWeightSemiBold;
+  color: $colorGreyBlack40;
+}
+
+.detailes-value-text {
+  font-weight: $fontWeightRegular;
+  color: $colorMainDark;
+}
+
+.general-amount-counter-text {
+  color: $colorGreyBlack40;
+  line-height: $lineHeight;
+  font-size: $fontSizeM;
+}
+
+.toast-message-text {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorMainDark;
+  @media screen and (max-width: 768px) {
+    font-size: $fontSizeM;
+    line-height: $lineHeightS;
+  }
+}
+
+.modal-name-text {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXXM;
+  line-height: $lineHeightXL;
+  color: $colorMainDark;
+}
+
+.modal-message-name-text {
+  @media screen and (max-width: 320px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.modal-step-text {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeM;
+  line-height: $lineHeightS;
+  color: $colorMainDark;
+  margin-top: 8px;
+}
+
+.modal-secondary-text {
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorGreyBlack70;
+  @media screen and (max-width: 320px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.modal-secondary-text__dark {
+  color: $colorMainDark;
+  text-align: center;
+}
+
+.modal-main-text {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeS;
+  line-height: $lineHeightS;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  color: $colorMainDark;
+}
+
+.modal-main-text__grey {
+  color: $colorGreyBlack70;
+}
+
+.modal-message-body-text {
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  align-items: center;
+  text-align: center;
+  @media screen and (max-width: 320px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

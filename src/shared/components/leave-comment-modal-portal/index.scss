@@ -1,0 +1,106 @@
+@import '../const.scss';
+
+.app-modal-closed {
+  display: none;
+}
+
+.app-modal-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $colorMainDark30;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+  padding: 16px;
+}
+
+.rate-modal-container {
+  position: relative;
+  padding: 48px 56px;
+  background: $colorMainWhite;
+  border-radius: 16px;
+
+  @media screen and (max-width: 560px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 520px) {
+    padding: 42px 16px 32px 16px;
+  }
+}
+
+.comment-modal-close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: $colorGreyBlack5;
+  border: none;
+  border-radius: 50%;
+  z-index: 4;
+
+  @media screen and (max-width: 400px) {
+    top: 16px;
+    right: 16px;
+  }
+}
+
+.comment-modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 416px;
+
+  @media screen and (max-width: 560px) {
+    gap: 24px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 320px) {
+    gap: 24px;
+    width: 256px;
+  }
+}
+
+.comment-modal-title {
+  width: 90%;
+  text-align: center;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXXM;
+  line-height: $lineHeightXL;
+  color: $colorMainDark;
+  @media screen and (max-width: 500px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.comment-modal-textarea {
+  width: 100%;
+  height: 152px;
+
+  margin-bottom: 20px;
+  padding: 19px 12px;
+  background: $colorGreyBlack5;
+  border-radius: 4px;
+  border: none;
+  font-size: $fontSizeM;
+  line-height: $lineHeightS;
+  color: $colorGreyBlack40;
+  resize: none;
+  outline: none;
+}

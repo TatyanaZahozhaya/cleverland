@@ -1,0 +1,23 @@
+@import '../const.scss';
+
+.book-card-name {
+    display: flex;
+    align-items: center;
+    justify-self: left;
+    max-height: 54px;
+    max-width: 649px;
+  
+    font-weight: $fontWeightSemiBold;
+    line-height: $lineHeightS;
+    color: $colorMainDark;
+    grid-area: bookName;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+
+  .highlited-words{
+    color: $colorMainAccent
+  }

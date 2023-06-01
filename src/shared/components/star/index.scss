@@ -1,0 +1,17 @@
+.main-star {
+  @media screen and (max-width: 520px) {
+    width: 13.33px;
+    height: 12.67px;
+  }
+}
+
+.book-page-star {
+  @media screen and (max-width: 320px) {
+    width: 27.63px;
+    height: 26.56px;
+  }
+}
+
+.star-to-vote-radio {
+  display: none;
+}

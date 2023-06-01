@@ -1,0 +1,297 @@
+@import '../const.scss';
+
+.profile-page-section-title {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXXM;
+  line-height: $lineHeightXL;
+  color: $colorMainDark;
+
+  @media screen and (max-width: 400px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.profile-page-section-sub-title {
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorGreyBlack40;
+  margin-bottom: 32px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.profile-page-personal-data-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.profile-page-personal-data-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.profile-page-personal-data-inputs-container {
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content: space-between;
+  row-gap: 32px;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-page-personal-data-form-buttons {
+  display: flex;
+  column-gap: 30px;
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 16px;
+  }
+}
+
+.profile-page-personal-data-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 255px;
+  height: 52px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.profile-page-personal-data-button_confirm {
+  background: $colorButtonHover;
+  border: none;
+  color: $colorMainWhite;
+
+  &:active {
+    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  }
+
+  &:disabled {
+    background: $colorGreyBlack10;
+    box-shadow: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: $fontSizeS;
+    line-height: $lineHeightS;
+  }
+}
+
+.profile-page-personal-data-button_edit {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid $colorGreyBlack20;
+  color: $colorMainDark;
+}
+
+.book-card-container-profile-page {
+  position: relative;
+}
+
+
+
+.profile-page-blue-card {
+  height: 218px;
+  width: 100%;
+  background: #6e76f1;
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 16px;
+
+  @media screen and (max-width: 400px) {
+    padding: 10px;
+  }
+}
+
+.profile-page-color-card-text {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  color: $colorMainWhite;
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.profile-page-color-card-title {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeL;
+  line-height: $lineHeightName;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 400px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+    margin-bottom: 12px;
+  }
+}
+
+.profile-page-color-card-subtitle {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  @media screen and (max-width: 400px) {
+    font-size: $fontSizeM;
+    line-height: $lineHeightS;
+  }
+}
+
+.profile-page-red-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 82, 83, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 16px;
+
+  @media screen and (max-width: 400px) {
+    padding: 10px;
+  }
+}
+
+.profile-page-booking-button-cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: end;
+  justify-self: end;
+  width: 196px;
+  height: 40px;
+
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeS;
+  line-height: $lineHeightS;
+  background: $colorButtonHover;
+  border: none;
+  color: $colorMainWhite;
+
+  &:active {
+    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  }
+
+  &:disabled {
+    background: $colorGreyBlack10;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 186px;
+  }
+}
+
+.elipse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:active {
+    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  }
+}
+
+.elipse-button-change {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid $colorGreyBlack20;
+  color: $colorMainDark;
+}
+
+.elipse-button-vote {
+  background: $colorButtonHover;
+  border: none;
+  color: $colorMainWhite;
+}
+
+.profile-page-for-rating-button {
+  align-self: end;
+  justify-self: end;
+  height: 40px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeS;
+  line-height: $lineHeightS;
+}
+
+.book-page-for-rating-button {
+  height: 52px;
+  border-radius: 30px;
+  letter-spacing: 0.2px;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+}
+
+.profile-page-delivery-date {
+  display: flex;
+  align-items: center;
+  text-align: right;
+  align-self: end;
+  justify-self: end;
+
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXXM;
+  line-height: $lineHeightXL;
+  text-transform: uppercase;
+  color: $colorMainAccent;
+  @media screen and (max-width: 400px) {
+    font-weight: $fontWeightSemiBold;
+    font-size: $fontSizeXM1;
+    line-height: 20px;
+  }
+}
+
+.profile-page-history-slider-container {
+  max-width: 100%;
+}
+.slider-for-history-container {
+  max-width: 100%;
+}
+
+.mySwaper-history {
+  height: 518px;
+  padding: 0 5px;
+}
+
+
+.book-card-container-history {
+  height: 470px;
+  width: 100%;
+
+}

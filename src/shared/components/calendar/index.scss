@@ -1,0 +1,149 @@
+@import '../const.scss';
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  width: 256px;
+  background: $colorMainWhite;
+  box-shadow: 0px 2px 4px $colorShadow020, 0px 3px 4px $colorShadow018, 0px 1px 5px $colorShadow024;
+  border-radius: 8px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 12px 8px 24px;
+}
+
+.calendar-month-selector-container {
+  position: relative;
+  display: flex;
+  gap: 4px;
+}
+
+.calendar-month-selector-text {
+  display: block;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  letter-spacing: 0.1px;
+  color: $colorGreyBlack40;
+}
+
+.calendar-month-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  border: none;
+}
+
+.calendar-arrows-container {
+  display: flex;
+  gap: 12px;
+}
+
+.calendar-month-selector-list {
+  position: absolute;
+  top: 30px;
+  left: -8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 147px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 5px 15px;
+  background: $colorMainWhite;
+  box-shadow: 0px 2px 4px $colorShadow020, 0px 3px 4px $colorShadow018, 0px 1px 5px $colorShadow024;
+  border-radius: 8px;
+}
+.calendar-month-selector-list__hidden {
+  display: none;
+}
+
+.calendar-month-selector-list-item {
+  cursor: pointer;
+  width: 100%;
+  text-align: start;
+  background-color: inherit;
+  border: none;
+
+  &:hover {
+    color: $colorMainAccent;
+  }
+}
+
+.calendar-table-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.calendar-table {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  width: 100%;
+  color: rgb(167, 167, 167);
+}
+
+.calendar-table-item {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.calendar-table-header-item {
+  font-weight: 500;
+  font-size: $fontSizeS;
+  line-height: $lineHeightXS;
+  letter-spacing: 0.2px;
+  color: $colorMainAccent;
+}
+
+.calendar-table-radio {
+  display: none;
+}
+
+.calendar-table-number-item {
+  cursor: pointer;
+  background-color: inherit;
+  border: none;
+  border-radius: 16px;
+  color: $colorGreyBlack40;
+}
+
+.calendar-table-number-item_avaliable {
+  color: $colorMainDark;
+}
+
+.calendar-table-number-item_weekend {
+  color: $colorGreyBlack40;
+  background: $colorOtherNegativeBackground;
+}
+
+.calendar-table-number-item_today {
+  color: rgb(248, 54, 0);
+}
+
+.calendar-table-number-item_booked {
+  background: $colorButtonHover;
+  color: $colorMainWhite;
+}
+
+.calendar-table-radio:checked + .calendar-table-number-item {
+  background: $colorButtonHover;
+  color: $colorMainWhite;
+}
+
+.calendar-table-radio:disabled + .calendar-table-number-item {
+  cursor: auto;
+}

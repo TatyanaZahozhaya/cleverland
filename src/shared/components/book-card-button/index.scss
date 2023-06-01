@@ -1,0 +1,89 @@
+@import '../const.scss';
+
+.book-card-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeS;
+  line-height: $lineHeightS;
+
+  background: $colorGreyBlack5;
+  border: 1px solid $colorGreyBlack20;
+  color: $colorMainDark;
+  grid-area: status;
+
+  &:disabled {
+    color: $colorGreyBlack40;
+  }
+}
+
+.free {
+  cursor: pointer;
+  border: none;
+  background: $colorButtonHover;
+  color: $colorMainWhite;
+
+  &:hover {
+    border: 1px solid rgb(255, 116, 15);
+    box-shadow: 0px 2px 5px $colorMainDarkTransparent;
+  }
+
+  &:active {
+    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  }
+}
+
+.main-window {
+  width: 166px;
+  height: 40px;
+
+  @media screen and (max-width: 320px) {
+    width: 256px;
+  }
+}
+
+.main-list {
+  width: 174px;
+  height: 40px;
+  justify-self: end;
+  align-self: end;
+
+  @media screen and (max-width: 768px) {
+    width: 186px;
+  }
+  @media screen and (max-width: 600px) {
+    justify-self: start;
+  }
+}
+
+.book-page {
+  width: 350px;
+  height: 52px;
+  border-radius: 30px;
+  margin-top: 32px;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+
+  @media screen and (max-width: 768px) {
+    width: 306px;
+    height: 52px;
+  }
+
+  @media screen and (max-width: 520px) {
+    align-self: center;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 42px;
+    font-size: $fontSizeS;
+    line-height: $lineHeightS;
+  }
+}

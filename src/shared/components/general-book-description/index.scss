@@ -1,0 +1,29 @@
+@import '../const.scss';
+
+.general-book-description {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 'cover name ' 'cover about ';
+    margin-top: 42px;
+
+    @media screen and (max-width: 768px) {
+        column-gap: 32px;
+        grid-template-areas: 'cover name ' 'about about ';
+        margin-top: 48px;
+    }
+
+    @media screen and (max-width: 520px) {
+        grid-template-areas: 'cover' 'name' 'about ';
+        column-gap: 0px;
+        justify-items: center;
+        margin-top: 20px;
+    }
+}
+
+.book-name-section {
+    display: flex;
+    flex-direction: column;
+    grid-area: name;
+
+}

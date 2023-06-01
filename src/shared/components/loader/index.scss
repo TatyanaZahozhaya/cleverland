@@ -1,0 +1,32 @@
+@import '../const.scss';
+
+.loader-layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $colorMainDark30;
+  backdrop-filter: blur(10px);
+  z-index: 20;
+}
+
+.loader-ellipse {
+  width: 68.75px;
+  height: 68.75px;
+  animation: rotateEllipse 2s infinite reverse linear;
+  @media screen and (max-width: 768px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@keyframes rotateEllipse {
+  from {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,45 @@
+@import '../const.scss';
+
+.burger-menu {
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+}
+
+.burger-menu_wrapper {
+  position: absolute;
+  left: 0;
+  background-color: transparent;
+  width: calc(100% - 16px);
+  min-height: 100vh;
+}
+
+.burger-menu_container {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  position: absolute;
+  visibility: hidden;
+  top: 22px;
+  left: -502px;
+  width: 502px;
+  min-height: 442px;
+  padding: 32px;
+  background: $colorGreyBlack5;
+  box-shadow: 0px 2px 4px $colorShadow020, 0px 3px 4px$colorShadow018, 0px 1px 5px $colorShadow024;
+  border-radius: 10px;
+
+  @media screen and (max-width: 534px) {
+    width: calc(100% - 16px);
+  }
+}
+
+.burger-menu_container__visible {
+  visibility: visible;
+  left: 64px;
+  z-index: 5;
+
+  @media screen and (max-width: 747px) {
+    left: 16px;
+  }
+}

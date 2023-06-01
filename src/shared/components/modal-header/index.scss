@@ -1,0 +1,13 @@
+@import '../const.scss';
+
+.modal-header {
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeL;
+  line-height: $lineHeightName;
+  color: $colorMainWhite;
+
+  @media screen and (max-width: 340px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}

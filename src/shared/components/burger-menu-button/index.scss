@@ -1,0 +1,71 @@
+@import '../const.scss';
+
+.burger-menu-button {
+  cursor: pointer;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: inherit;
+  @media screen and (max-width: 500px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.burger-menu-button > span,
+.burger-menu-button > span::before,
+.burger-menu-button > span::after {
+  display: block;
+  position: absolute;
+  width: 26.67px;
+  height: 2.67px;
+
+  @media screen and (max-width: 500px) {
+    width: 20px;
+    height: 2px;
+  }
+}
+
+.burger-menu-button_open > span,
+.burger-menu-button_open > span::before,
+.burger-menu-button_open > span::after {
+  background-color: $colorMainDark;
+}
+
+.burger-menu-button_open > span::before {
+  content: '';
+  top: -9px;
+  @media screen and (max-width: 500px) {
+    top: -5px;
+  }
+}
+.burger-menu-button_open > span::after {
+  content: '';
+  top: 9px;
+  @media screen and (max-width: 500px) {
+    top: 5px;
+  }
+}
+
+.burger-menu-button_close > span,
+.burger-menu-button_close > span::before,
+.burger-menu-button_close > span::after {
+  background-image: -webkit-$colorButtonHover;
+  background-image: -moz-$colorButtonHover;
+  background-image: -o-$colorButtonHover;
+  background-image: $colorButtonHover;
+}
+
+.burger-menu-button_close > span {
+  content: '';
+  transform: rotate(45deg);
+}
+.burger-menu-button_close > span::after {
+  content: '';
+  transform: rotate(90deg);
+}
+

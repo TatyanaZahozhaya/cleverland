@@ -1,0 +1,29 @@
+@import '../const.scss';
+
+.log-in-section {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: $spaceM;
+
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
+}
+
+.log-in-section-button {
+  border: none;
+  background-color: inherit;
+}
+
+.log-in-section_avatar {
+  display: block;
+  width: $avatarSize;
+  height: $avatarSize;
+  object-fit: scale-down;
+  border-radius: 50%;
+}
+
+.log-in-section:hover .user-avatar-menu-container {
+  display: flex;
+}

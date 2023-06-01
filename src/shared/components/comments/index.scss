@@ -1,0 +1,17 @@
+@import '../const.scss';
+
+.comments_section {
+  max-width: 730px;
+  margin-top: 62px;
+  display: grid;
+  grid-template-areas: 'sectionHeader hideButton' 'commentsBox commentsBox';
+  grid-template-columns: 92px 1fr;
+  column-gap: 24px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 52px;
+  }
+  @media screen and (max-width: 520px) {
+    margin-top: 42px;
+  }
+}

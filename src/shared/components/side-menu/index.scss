@@ -1,0 +1,15 @@
+@import '../const.scss';
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    width: 274px;
+    @media screen and (max-width: 1018px) {
+        width: 250px;
+    }
+    @media screen and (max-width: 1000px) {
+        display: none;
+    }
+ 
+}

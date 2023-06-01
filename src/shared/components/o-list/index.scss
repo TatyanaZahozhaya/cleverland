@@ -1,0 +1,11 @@
+.olist {
+  counter-reset: li;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.olist-inner {
+  padding: 16px 0 0px 30px;
+  gap: 16px;
+}

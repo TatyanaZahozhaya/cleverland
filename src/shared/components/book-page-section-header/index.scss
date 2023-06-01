@@ -1,0 +1,10 @@
+@import '../const.scss';
+
+.book-page-section-header {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    max-width: 350px;
+    border-bottom: 1px solid $colorGreyBlack10;
+    padding-bottom: 16px;
+}

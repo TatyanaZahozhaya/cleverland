@@ -1,0 +1,32 @@
+@import '../const.scss';
+
+.book-card-rating {
+  margin: 16px 0;
+  justify-self: flex-start;
+  grid-area: rating;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.star-rating-to-vote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.star-rating-to-vote-title {
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+  color: $colorMainDark;
+}
+.star-rating-to-vote-box{
+  margin: 0;
+  justify-self: flex-start;
+  grid-area: rating;
+}

@@ -1,0 +1,113 @@
+@import '../const.scss';
+
+.modal-input-line_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%
+}
+
+.modal-input-line {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 336px 24px 24px;
+  grid-template-areas: 'theInput theTick theEye';
+  gap: 4px;
+  justify-content: center;
+  align-content: center;
+  height: 56px;
+  padding: 19px 12px;
+  background: $colorGreyBlack5;
+  border-radius: 4px 4px 0 0;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr 24px 24px;
+  }
+}
+
+.modal-input-line_label {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 12px;
+  width: 100%;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeM;
+  line-height: $lineHeightS;
+  color: $colorMainDark;
+}
+
+.modal-input-line_label:has(input:disabled),
+.modal-input-line_label:has(input:focus),
+.modal-input-line_label-up {
+  top: 6px;
+  font-weight: 500;
+  font-size: $fontSizeS;
+  line-height: $lineHeightXS;
+  color: $colorGreyBlack40;
+}
+
+.modal-input {
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeM;
+  line-height: $lineHeightS;
+  color: $colorMainDark;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.modal-input-line_instructions {
+  padding: 2px 12px;
+  font-weight: 500;
+  font-size: $fontSizeS;
+  line-height: $lineHeightXS;
+  letter-spacing: 0.2px;
+  color: $colorGreyBlack40;
+  border-top: 1px solid $colorGreyBlack20;
+}
+.modal-input-line:has(.modal-input:not(:focus))
+  + .modal-input-line_instructions:has(.modal-input-line_instructions__warning-text) {
+  color: $colorOtherNegative;
+}
+
+.modal-input-line_instructions_warning,
+.modal-input-line_instructions:has(.modal-input-line_instructions__warning-text) {
+  border-top: 1px solid $colorOtherNegative;
+}
+
+.modal-input-line_instructions__warning-text {
+  color: $colorOtherNegative;
+}
+
+.modal-input-line_description {
+  padding: 2px 12px;
+  font-weight: 500;
+  font-size: $fontSizeS;
+  line-height: $lineHeightXS;
+  letter-spacing: 0.2px;
+  color: $colorGreyBlack40;
+}
+
+.modal-input-password-validation-tick {
+  width: 24px;
+  height: 24px;
+  grid-area: theTick;
+}
+
+.modal-input-password-type-toggler {
+  cursor: pointer;
+  display: inline-grid;
+  justify-content: center;
+  align-content: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  grid-area: theEye;
+}

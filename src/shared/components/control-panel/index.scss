@@ -1,0 +1,10 @@
+@import '../const.scss';
+
+.control-panel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.control-panel__hidden{
+    display: none;
+}

@@ -1,0 +1,48 @@
+@import '../const.scss';
+
+.book-card-cover {
+  width: 174px;
+  height: 242px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid $colorGreyBlack40;
+  grid-area: bookCover;
+}
+
+.book-card-cover-window {
+  width: 174px;
+  height: 242px;
+  border-radius: 10px;
+}
+
+.book-card-cover-list {
+  width: 120px;
+  height: 170px;
+  border-radius: 3px;
+
+  @media screen and (max-width: 400px) {
+    width: 70px;
+    height: 100px;
+  }
+}
+
+.book-card-cover_img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.book-card-default-cover_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-card-default-cover_box {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+

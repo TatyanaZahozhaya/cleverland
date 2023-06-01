@@ -1,0 +1,40 @@
+@import '../const.scss';
+
+.modal-form {
+  width:100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: $colorMainWhite;
+  border-radius: 16px;
+  padding: 48px 56px;
+  align-items: flex-start;
+  @media screen and (max-width: 540px) {
+    padding: 48px 16px;
+  }
+  @media screen and (max-width: 320px) {
+    padding: 24px 16px;
+  }
+
+}
+
+.modal-form-reset {
+  padding-top: 52px;
+}
+
+.modal-enter-link {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-inputs-part {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.form-section {
+  width: 100%;
+}

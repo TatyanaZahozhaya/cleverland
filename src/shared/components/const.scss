@@ -1,0 +1,54 @@
+$colorMainAccent: rgb(255, 82, 83, 1);
+$colorMainWhite: rgba(255, 255, 255, 1);
+$colorMainDark: rgba(54, 54, 54, 1);
+
+$colorMainDark30: rgba(54, 54, 54, 0.3);
+$colorButtonPressed: linear-gradient(233.73deg, rgb(248, 54, 0) -16.08%, rgb(249, 212, 35) 327.37%);
+$colorButtonHover: linear-gradient(231.58deg, rgb(248, 54, 0) -53.35%, rgb(249, 212, 35) 297.76%);
+$colorSliderThumbs: linear-gradient(
+  90deg,
+  #ffffff 0%,
+  rgba(255, 255, 255, 0) 17.19%,
+  rgba(255, 255, 255, 0) 83.33%,
+  #ffffff 100%
+);
+$colorOtherWarning: rgba(255, 188, 31, 1);
+$colorOtherPositive: rgba(0, 202, 113, 1);
+$colorOtherNegative: rgba(244, 44, 79, 1);
+$colorOtherPositiveBackground: rgba(235, 249, 241, 1);
+$colorOtherNegativeBackground: rgba(254, 235, 234, 1);
+$colorGreyBlack70: rgb(114, 114, 114, 1);
+$colorGreyBlack40: rgba(167, 167, 167, 1);
+$colorGreyBlack20: rgba(191, 196, 201, 1);
+$colorGreyBlack10: rgba(235, 235, 235, 1);
+$colorGreyBlack5: rgba(249, 249, 250, 1);
+$colorShadow018: rgba(191, 196, 201, 0.18);
+$colorShadow020: rgba(191, 196, 201, 0.2);
+$colorShadow024: rgba(191, 196, 201, 0.24);
+$colorMainDarkTransparent: rgba(54, 54, 54, 0.1);
+
+$fontWeightRegular: 400;
+$fontWeightSemiBold: 600;
+$fontWeightBold: 700;
+
+$lineHeight: 24px;
+$lineHeightXS: 16px;
+$lineHeightS: 18px;
+$lineHeightL: 28px;
+$lineHeightXL: 30px;
+$lineHeightName: 40px;
+
+$fontSizeL: 32px;
+$fontSizeXXM: 24px;
+$fontSizeXM: 18px;
+$fontSizeXM1: 16px;
+$fontSizeM: 14px;
+$fontSizeS: 12px;
+
+$avatarSize: 58px;
+
+$spaceXL: 42px;
+$spaceL: 32px;
+$spaceM: 16px;
+$mainNavLinkwidth: 255px;
+$borderThickness: 1px;

@@ -1,0 +1,116 @@
+@import '../const.scss';
+.main-nav-link_container {
+  display: grid;
+  grid-template-columns: 219px auto;
+  grid-template-rows: 36px auto;
+  grid-template-areas: 'mainnav openbutton' 'innernav innernav';
+}
+
+.main-nav-link {
+  cursor: pointer;
+  display: block;
+  padding: 8px 0;
+  width: 219px;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXM;
+  line-height: $lineHeightL;
+  border-bottom: $borderThickness solid transparent;
+  align-self: center;
+  border: none;
+  align-self: flex-start;
+  text-align: start;
+  background-color: inherit;
+  grid-area: mainnav;
+}
+
+.main-nav-link_focus {
+  background: $colorButtonHover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $colorMainAccent;
+  border-bottom: $borderThickness solid transparent;
+  border-image: $colorButtonHover;
+  border-image-slice: 1;
+}
+
+.main-nav-link_btn__focus {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+}
+
+.inner-nav-link_section {
+  display: flex;
+  flex-direction: column;
+  gap: $spaceM;
+  padding-top: $spaceM;
+  padding-left: 20px;
+  grid-area: innernav;
+}
+
+.inner-nav-link_section__closed {
+  position: absolute;
+  visibility: hidden;
+}
+
+.inner-nav-link_text {
+  display: inline;
+  margin-right: 6px;
+  font-weight: $fontWeightRegular;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+
+  &:hover {
+    font-weight: $fontWeightRegular;
+    color: $colorMainAccent;
+  }
+}
+
+.inner-nav-link_text__focus {
+  font-weight: $fontWeightBold;
+  background: $colorButtonHover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.inner-nav-link_amount {
+  display: inline-block;
+  color: $colorGreyBlack40;
+  line-height: $lineHeight;
+}
+
+.inner-nav-link_amount__focus {
+  color: $colorMainDark;
+}
+
+.main-nav-link_button {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: inherit;
+  grid-area: openbutton;
+}
+.main-nav-link_button > svg > path {
+  fill: rgb(248, 107, 12);
+}
+.main-nav-link_button__closed {
+  transform: rotate(180deg);
+}
+
+.user-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 42px;
+  padding: 32px 0;
+  border-top: 1px solid #bfc4c9;
+  @media screen and (min-width: 781px) {
+    display: none;
+  }
+}

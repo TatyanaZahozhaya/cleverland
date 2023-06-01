@@ -1,0 +1,77 @@
+@import '../const.scss';
+
+.booking-modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 416px;
+
+  @media screen and (max-width: 560px) {
+    gap: 24px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 320px) {
+    gap: 24px;
+    width: 256px;
+  }
+}
+
+.booking-modal-title {
+  width: 80%;
+  text-align: center;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeXXM;
+  line-height: $lineHeightXL;
+  color: $colorMainDark;
+  @media screen and (max-width: 500px) {
+    font-size: $fontSizeXM;
+    line-height: $lineHeightL;
+  }
+}
+
+.booking-modal-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 52px;
+  border-radius: 30px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: $fontWeightSemiBold;
+  font-size: $fontSizeXM1;
+  line-height: $lineHeight;
+}
+
+.booking-modal-button-confirm {
+  background: $colorButtonHover;
+  border: none;
+  color: $colorMainWhite;
+
+  &:active {
+    box-shadow: 0px 3px 4px rgba(222, 125, 11, 0.2), 0px 1px 10px rgba(249, 89, 8, 0.2);
+  }
+
+  &:disabled {
+    background: $colorGreyBlack10;
+  }
+
+  @media screen and (max-width: 500px) {
+    height: 40px;
+    border-radius: 20px;
+    font-size: $fontSizeS;
+    line-height: $lineHeightS;
+  }
+}
+
+.booking-modal-button-cancel {
+  background: $colorMainWhite;
+  border: 1px solid $colorGreyBlack20;
+  color: $colorMainDark;
+}
+
+

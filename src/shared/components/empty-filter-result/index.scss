@@ -1,0 +1,19 @@
+@import '../const.scss';
+
+.empty-filter-result {
+  width: 100%;
+  margin-top: 200px;
+  font-weight: $fontWeightBold;
+  font-size: $fontSizeL;
+  line-height: $lineHeightName;
+  text-align: center;
+  color: $colorGreyBlack40;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 226px;
+  }
+
+  @media screen and (max-width: 320px) {
+    margin-top: 134px;
+  }
+}

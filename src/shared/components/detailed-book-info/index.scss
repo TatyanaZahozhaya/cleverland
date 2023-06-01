@@ -1,0 +1,12 @@
+@import '../const.scss';
+
+.detailed-book-info {
+    margin-top: 62px;
+
+    @media screen and (max-width: 768px) {
+        margin-top: 52px;
+      }
+      @media screen and (max-width: 520px) {
+        margin-top: 24px;
+      }
+}

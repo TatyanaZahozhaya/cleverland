@@ -1,0 +1,10 @@
+@import '../const.scss';
+
+.view-toggler{
+    display: flex;
+    gap: $spaceM;
+}
+
+.view-toggler__hidden{
+    display: none;
+}

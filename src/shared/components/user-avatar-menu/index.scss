@@ -1,0 +1,27 @@
+@import '../const.scss';
+
+.user-avatar-menu-container {
+  display: none;
+  width: 270px;
+  position: absolute;
+  top: 55px;
+  right: -2px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 32px 24px;
+  gap: 32px;
+  background: $colorMainWhite;
+  box-shadow: 4px 4px 4px rgba(54, 54, 54, 0.05), -4px 4px 4px rgba(54, 54, 54, 0.05);
+  border-radius: 0px 0px 10px 10px;
+  z-index: 1;
+}
+
+.user-avatar-menu-container__closed {
+  display: none;
+}
+
+.main-nav-link_user {
+  width: 100%;
+  align-self: flex-end;
+  text-align: end;
+}
