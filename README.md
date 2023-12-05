@@ -1,6 +1,9 @@
 # Cleverland*
+NOTE: the backend is currently unavailable
 
 ## Summary
+
+![главная страница все книги плитка](https://github.com/TatyanaZahozhaya/cleverland/assets/102023089/d036a17c-de04-4368-8ea5-0ee9278180e3)
 
 Приложение для библиотеки.
 
